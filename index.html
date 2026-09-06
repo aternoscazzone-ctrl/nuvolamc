@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NuvolaMC — Vola in alto</title>
+    <meta name="description" content="NuvolaMC - Il tuo network Minecraft. Entra ora e vivi una nuova esperienza.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SFONDO -->
+    <div class="background"></div>
+    <div class="overlay"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#" class="brand">
+            <span class="brand-icon">☁</span>
+            <span>NUVOLA<span class="brand-mc">MC</span></span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#forum">Forum</a>
+            <a href="#regole">Regole</a>
+            <a href="#staff">Staff</a>
+            <a href="STORE_URL">Store</a>
+        </nav>
+
+        <button class="menu-button" onclick="toggleMenu()">
+            ☰
+        </button>
+    </header>
+
+    <!-- MENU MOBILE -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#" onclick="closeMenu()">Home</a>
+        <a href="#news" onclick="closeMenu()">News</a>
+        <a href="#forum" onclick="closeMenu()">Forum</a>
+        <a href="#regole" onclick="closeMenu()">Regole</a>
+        <a href="#staff" onclick="closeMenu()">Staff</a>
+        <a href="STORE_URL">Store</a>
+    </div>
+
+    <!-- HERO -->
+    <main class="hero">
+
+        <div class="hero-content">
+
+            <!-- LOGO -->
+            <div class="logo-container">
+                <div class="logo-glow"></div>
+
+                <!-- Per ora utilizziamo il nome.
+                     Dopo possiamo mettere il vero logo NuvolaMC -->
+                <div class="logo">
+                    <span class="cloud">☁</span>
+                    <span class="logo-text">NUVOLA<span>MC</span></span>
+                </div>
+            </div>
+
+            <div class="badge">
+                ✦ NETWORK MINECRAFT ✦
+            </div>
+
+            <h1>
+                Vola in alto con
+                <span>NuvolaMC</span>
+            </h1>
+
+            <p class="subtitle">
+                Vivi una nuova esperienza Minecraft.<br>
+                Entra nel nostro network e inizia la tua avventura.
+            </p>
+
+            <!-- BUTTONS -->
+            <div class="buttons">
+
+                <button class="btn btn-ip" onclick="copyIP()">
+                    <span>⚔</span>
+                    <span>
+                        <small>SERVER IP</small>
+                        PLAY.NUVOLAMC.IT
+                    </span>
+                </button>
+
+                <a
+                    class="btn btn-discord"
+                    href="DISCORD_URL"
+                    target="_blank"
+                >
+                    <span>💬</span>
+                    <span>
+                        <small>COMMUNITY</small>
+                        UNISCITI AL DISCORD
+                    </span>
+                </a>
+
+            </div>
+
+            <div class="copy-message" id="copyMessage">
+                ✓ IP copiato negli appunti!
+            </div>
+
+        </div>
+
+        <!-- SCROLL -->
+        <div class="scroll-indicator">
+            <span></span>
+            SCROLL
+        </div>
+
+    </main>
+
+    <!-- SEZIONE INFO -->
+    <section class="info-section">
+
+        <div class="info-card">
+            <div class="info-icon">⚔</div>
+            <h3>Modalità</h3>
+            <p>Scopri tutte le modalità disponibili su NuvolaMC.</p>
+        </div>
+
+        <div class="info-card">
+            <div class="info-icon">👥</div>
+            <h3>Community</h3>
+            <p>Entra nella nostra community e gioca insieme agli altri.</p>
+        </div>
+
+        <div class="info-card">
+            <div class="info-icon">🏆</div>
+            <h3>Divertimento</h3>
+            <p>Competi, vinci e scala le classifiche del network.</p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            © <span id="year"></span> NuvolaMC. Tutti i diritti riservati.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
